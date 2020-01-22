@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Parks in Your Area</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+
+    <h1>Search for National Parks Near You!</h1>
+    
+    <form>
+      <label for="areaSearch">Enter your state code below. To search for parks that exist in multiple states, separate with a comma.</label>
+      <br> <br>
+      <input type="text" id="stateSearch" placeholder="State code: AZ, CA, etc." required>
+      <br>
+      <br>
+      <label for="max-results">How many parks do you want to compare?</label>
+      <br>
+      <br>
+      <input type="number" id="maxResults" min="1" max="50" value="10">
+      <br>  
+      <br>
+      <input type="submit" value="Search">
+
+    </form>
+
+    <p id="js-error-message" class="error-message"></p>
+    <section id="results" class="hidden">
+
+    <h2>Results: National Parks in Your State</h2>
+
+    <ul id="searchResults">
+      </ul>
+
+    </section>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
